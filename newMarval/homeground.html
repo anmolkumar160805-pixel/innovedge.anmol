@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovEdge Club</title>
+    <link rel="stylesheet" href="homeground.css">
+</head>
+<body>
+    <div class="scroll-container">
+    </div>
+    <header class="header">
+        <div class="college">
+            <img src="C:\Users\dellj\OneDrive\Documents\collage study files\Programming in Python [PIP]\Module Notes and PPT\Module 2\PPT\clubWebsite\innovedge.jpg" alt="College Logo" class="logo" loading="lazy" decoding="async">
+            <h1 class="college-name">InnovEdge Club</h1>
+        </div>
+        <div class="club">
+            <img src="C:\Users\dellj\OneDrive\Documents\collage study files\Programming in Python [PIP]\Module Notes and PPT\Module 2\PPT\SNPSU_logo__1_-removebg-preview.png" alt="Club Logo" class="logo club-logo" loading="lazy" decoding="async">
+            <span class="club-name"></span>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="main-box">
+            <div class="content">
+                <div class="photo-frame">
+                    <img src="innovedge.jpg" alt="InnovEdge Club Logo" loading="lazy" decoding="async">
+                </div>
+                <div class="text-area">
+                    <h2>Welcome to Our Club</h2>
+                    <p>
+                        Together we innovate, create, and lead with technology.
+                        Step into a community that thrives on ideas and collaboration.
+                    </p>
+                    <button id="enterWorldBtn" class="enter-btn">Enter into the World</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="upcoming-events" class="content-section">
+            <div class="text-content">
+                <h2>Upcoming Events</h2>
+                <p>Check out our latest and greatest events! Get ready for a blend of innovation and hands-on experience.</p>
+            </div>
+            <div class="image-placeholder">
+                <img src="C:\Users\dellj\OneDrive\Pictures\HEYhey.jpg" alt="A group of students gathered around a table, collaborating and smiling in a brightly lit classroom. The atmosphere is energetic and welcoming. No visible text in the image." loading="lazy" decoding="async">
+            </div>
+        </section>
+
+        <section id="about" class="content-section hero-section">
+            <div class="hero-content">
+                <h2>About InnovEdge</h2>
+                <p class="hero-description">
+                    We are a passionate community of innovators, creators, and technology enthusiasts. 
+                    Our mission is to foster creativity, collaboration, and cutting-edge solutions that 
+                    shape the future of technology and innovation.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Events Organized</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="support" class="content-section">
+            <h2>Support Us</h2>
+            <div class="support-content">
+                <div class="support-info">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <h3>📱 Social Media</h3>
+                            <p>Instagram: <strong>@InnovEdge</strong></p>
+                            <p>LinkedIn: <strong>InnovEdge Club</strong></p>
+                            <p>Twitter: <strong>@InnovEdgeTech</strong></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📞 Contact Info</h3>
+                            <p>Phone: <strong>+123-456-7890</strong></p>
+                            <p>Email: <strong>info@innovedge.com</strong></p>
+                            <p>Address: <strong>Tech Campus, Innovation Hub</strong></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🤝 Get Involved</h3>
+                            <p>Join our community of innovators</p>
+                            <p>Attend our weekly meetups</p>
+                            <p>Participate in hackathons</p>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 InnovEdge Club. All rights reserved.</p>
+                        <p>Building the future, one innovation at a time.</p>
+                    </div>
+                </div>
+                <div class="qr-code-placeholder">
+                    <img src="C:\Users\dellj\OneDrive\Documents\collage study files\Programming in Python [PIP]\Module Notes and PPT\Module 2\PPT\clubWebsite\WhatsApp Image 2025-04-28 at 08.35.19_f97c8b0e.jpg" alt="QR Code" loading="lazy" decoding="async">
+                    <p class="qr-text">Scan to join our community</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#view-page" class="footer-link" data-icon="🏠">
+            <span class="footer-icon">🏠</span>
+            <span class="footer-text">Home</span>
+        </a>
+        <a href="#upcoming-events" class="footer-link" data-icon="📅">
+            <span class="footer-icon">📅</span>
+            <span class="footer-text">Events</span>
+        </a>
+        <a href="#about" class="footer-link" data-icon="👥">
+            <span class="footer-icon">👥</span>
+            <span class="footer-text">About</span>
+        </a>
+        <a href="#support" class="footer-link" data-icon="💬">
+            <span class="footer-icon">💬</span>
+            <span class="footer-text">Support</span>
+        </a>
+        <a href="clubGallery.html" class="footer-link gallery-link" data-icon="🖼️">
+            <span class="footer-icon">🖼️</span>
+            <span class="footer-text">Gallery</span>
+        </a>
+    </footer>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <div class="close-btn" onclick="closePopup()">✖</div>
+            <div class="candidate-info" id="candidateInfo">
+            </div>
+        </div>
+    </div>
+    <script src="homeground.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - InnovEdge Club</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-section">
+                    <img src="innovedge.jpg" alt="InnovEdge Club Logo" class="login-logo">
+                    <h1>InnovEdge Club</h1>
+                </div>
+                <p class="welcome-text">Welcome back! Please sign in to continue.</p>
+            </div>
+            
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Sign In</span>
+                    <div class="btn-loader"></div>
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#" class="signup-link" id="showRegistration">Sign up here</a></p>
+                <a href="homeground.html" class="back-home">← Back to Home</a>
+            </div>
+            
+            <!-- New Join Button -->
+            <div class="new-join-section">
+                <button class="new-join-btn" id="newJoinBtn">
+                    <span class="btn-icon">🌟</span>
+                    <span class="btn-text">I Am New Here</span>
+                    <span class="btn-subtitle">Join Our Community</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Registration Form Overlay -->
+        <div class="registration-overlay" id="registrationOverlay">
+            <div class="registration-card">
+                <div class="registration-header">
+                    <h2>Join InnovEdge Club</h2>
+                    <p>Fill out the form below to become a member</p>
+                    <button class="close-registration" id="closeRegistration">✖</button>
+                </div>
+                
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="regFirstName">First Name</label>
+                            <input type="text" id="regFirstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regLastName">Last Name</label>
+                            <input type="text" id="regLastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regPhone">Phone Number</label>
+                        <input type="tel" id="regPhone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="regClass">Class/Year</label>
+                            <select id="regClass" name="class" required>
+                                <option value="">Select Class</option>
+                                <option value="1st Year">1st Year</option>
+                                <option value="2nd Year">2nd Year</option>
+                                <option value="3rd Year">3rd Year</option>
+                                <option value="4th Year">4th Year</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="regBranch">Branch/Department</label>
+                            <input type="text" id="regBranch" name="branch" placeholder="e.g., Computer Science" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regInterests">Areas of Interest</label>
+                        <textarea id="regInterests" name="interests" placeholder="Tell us about your interests in technology, innovation, etc." rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regPhoto">Profile Photo</label>
+                        <div class="photo-upload">
+                            <input type="file" id="regPhoto" name="photo" accept="image/*">
+                            <label for="regPhoto" class="photo-upload-btn">
+                                <span class="upload-icon">📷</span>
+                                <span class="upload-text">Choose Photo</span>
+                            </label>
+                            <div class="photo-preview" id="photoPreview"></div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="registration-submit-btn">
+                        <span class="btn-text">Submit Application</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Success Message Overlay -->
+        <div class="success-overlay" id="successOverlay">
+            <div class="success-card">
+                <div class="success-icon">✅</div>
+                <h2>Application Submitted!</h2>
+                <p class="success-message">Approval pending, we will contact you soon!</p>
+                <p class="success-details">Thank you for your interest in joining InnovEdge Club. We'll review your application and get back to you within 2-3 business days.</p>
+                <button class="back-to-home-btn" onclick="window.location.href='homeground.html'">
+                    <span class="btn-icon">🏠</span>
+                    Back to Home
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
